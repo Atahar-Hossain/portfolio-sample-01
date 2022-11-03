@@ -23,7 +23,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+a {
+	text-decoration: none;
+}
 :root {
 	/* background color */
 	--primary-color: #4458dc;
@@ -32,8 +34,7 @@
 	--bg-light: #faf8ff;
 	--bg-black: #000;
 	--bg-gray: #eee;
-	--gradient: linear-gradient(to right, #4458dc 0%, #854fee 100%),
-		radial-gradient (circle at top left, #4458dc, #854fee);
+	--gradient: linear-gradient(220deg, #4458dc 0%, #854fee 100%);
 
 	/* font family */
 	--primary-font: "rubik", sans-serif;
@@ -54,9 +55,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-a {
-	text-decoration: none;
-}
 section {
 	padding: 5rem 0;
 }
@@ -69,10 +67,11 @@ section {
 	line-height: 2.75rem;
 	text-align: center;
 	text-transform: uppercase;
+	text-decoration: none;
 	cursor: pointer;
 	border-radius: 0.3125rem;
 	box-shadow: 0 0.625rem 1.875rem rgb(118 85 225/30%);
-	border: double 0.125rem transparent;
+	border: solid 0.125rem transparent;
 	padding: 0 2.625rem;
 	transition: all 0.3s ease-in-out;
 	--webkit-transition: all 0.3s ease-in-out;
@@ -185,3 +184,19 @@ p {
 }
 
 /* 3. Banner section start */
+.banner-wrapper {
+	padding-top: 6.875rem;
+
+	background-image: url(../images/home-banner.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	z-index: 1;
+}
+.banner-content {
+	align-self: center;
+	vertical-align: middle;
+}
+#nickname {
+	color: #854fee;
+}
