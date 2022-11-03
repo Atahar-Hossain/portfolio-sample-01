@@ -68,7 +68,8 @@ section {
 	font-size: 0.875rem;
 	line-height: 2.75rem;
 	text-align: center;
-	text-decoration: uppercase;
+	text-transform: uppercase;
+	cursor: pointer;
 	border-radius: 0.3125rem;
 	box-shadow: 0 0.625rem 1.875rem rgb(118 85 225/30%);
 	border: double 0.125rem transparent;
@@ -76,6 +77,78 @@ section {
 	transition: all 0.3s ease-in-out;
 	--webkit-transition: all 0.3s ease-in-out;
 }
-.primary-btn{
-	
+.primary-btn {
+	background-image: var(--gradient);
+	color: var(--text-white);
+}
+.primary-btn:hover {
+	border-color: var(--secondary-color);
+	background: var(--bg-white);
+	color: var(--secondary-text);
+	box-shadow: none;
+}
+.secondary-btn {
+	background-image: var(--bg-white);
+	color: var(--secondary-text);
+	border-color: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+	background: var(--gradient);
+	color: var(--text-white);
+	box-shadow: none;
+}
+h1 {
+	font-size: 4.375rem;
+	line-height: 3.75rem;
+	font-weight: 700;
+	color: var(--text-black);
+	margin-bottom: 1.25rem;
+	font-family: var(--primary-font);
+}
+h2 {
+	font-size: 2.5rem;
+	line-height: 3.4375rem;
+	font-weight: 500;
+	color: var(--text-black);
+	margin-bottom: 1.5625rem;
+	font-family: var(--primary-font);
+}
+h3 {
+	font-size: 2.25rem;
+	line-height: 3.125rem;
+	font-weight: 700;
+	color: var(--text-black);
+	margin-bottom: 0.9375rem;
+	font-family: var(--primary-font);
+	text-transform: uppercase;
+}
+h5 {
+	font-size: 1.5rem;
+	/* line-height: 3.125rem; */
+	font-weight: 500;
+	color: var(--text-black);
+	margin-bottom: 0.9375rem;
+	/* font-family: var(--primary-font); */
+	/* text-transform: uppercase; */
+}
+
+p {
+	color: var(--text-gray);
+	font-size: 0.9375rem;
+	line-height: 1.625rem;
+	font-weight: 400;
+}
+/*2. navbar */
+
+.header-wraper .navbar {
+	padding: 0.9375rem;
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+}
+
+.header-wraper .navbar-brand img {
+	max-width: 10rem;
+	height: auto;
 }
