@@ -1,0 +1,72 @@
+@media (max-width: 1199.5px) {
+	h1 {
+		font-size: 3.75rem;
+	}
+	h2 {
+		font-size: 2.1875rem;
+	}
+	h3 {
+		font-size: 1.875rem;
+		line-height: 2.6875rem;
+	}
+	h5 {
+		font-size: 1.0625rem;
+	}
+}
+@media (max-width: 991px) {
+	.header-scrolled {
+		height: auto;
+	}
+	.header-wraper .navbar-collapse {
+		margin-top: -0.125rem;
+	}
+	.header-wraper .navbar-nav {
+		text-align: center;
+		background-color: var(--bg-white);
+		padding-bottom: 0.9375rem;
+		margin-top: 0.9375rem;
+	}
+	.banner-wrapper {
+		background-image: none;
+	}
+	.banner-content {
+		padding-top: 5rem;
+		text-align: center;
+	}
+	.banner-wrapper .banner-content h2::after {
+		content: "";
+		width: 19%;
+		height: 0.125rem;
+		position: absolute;
+		top: 50%;
+		left: 60%;
+		background: var(--bg-black);
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 767px) {
+	h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	h2 {
+		font-size: 1.875rem;
+		line-height: 2.375rem;
+	}
+	h3 {
+		font-size: 1.5625rem;
+		line-height: 2.1875rem;
+	}
+	.banner-wrapper .banner-content h2::after {
+		content: "";
+		width: 20%;
+		height: 0.125rem;
+		position: absolute;
+		top: 50%;
+		left: 65%;
+		background: var(--bg-black);
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 575.5px) {
+}

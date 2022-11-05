@@ -200,3 +200,13 @@ p {
 #nickname {
 	color: #854fee;
 }
+.banner-wrapper .banner-content h2::after {
+	content: "";
+	width: 36%;
+	height: 0.125rem;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	background: var(--bg-black);
+	overflow-x: hidden;
+}
